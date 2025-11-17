@@ -1,21 +1,149 @@
-<<<<<<< HEAD
-# React + Vite
+## 🚁 VyomGarud – Advanced UAV Systems Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VyomGarud is a modern, high-performance frontend website showcasing UAV (Unmanned Aerial Vehicle) innovations.
+It highlights products, vision, mission, and advanced capabilities designed for strategic & defense operations.
 
-Currently, two official plugins are available:
+Built with React + Tailwind CSS, the website is fully responsive and optimized for modern UI/UX standards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 📌 Table of Contents
+- ### Overview
+- ### Live Demo
+- ### Features
+- ### Project Sections
+   - #### About
+   - #### Products
+   - #### Highlights
+   - #### Contact
+- ### Tech Stack
+- ### Folder Structure
+- ### Setup and installation
+- ### Available Scripts
+- ### Contributing
+- ### License
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛰️ Overview
 
-## Expanding the ESLint configuration
+VyomGarud is a conceptual aerospace-tech brand specializing in autonomous UAV systems.
+This website demonstrates:
+- ### Company's mission & values
+- ### Cutting-edge UAV products
+- ### Technological capabilities
+- ### Contact & communication options
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Vyomgarud
-VyomGarud - a UAV / drone systems company with a military-grade, professional identity
->>>>>>> ddce14276f0a98de64b76ed60d836a12335cadea
+## 🌐 Live Demo
+
+### Github LInk:
+
+
+       https://github.com/MohammadAdnan242/Vyomgarud
+
+### Live web App Link:
+
+
+       https://vyomgarud2.netlify.app/
+
+
+## ✨ Features
+### ✔ Fully responsive UI
+###  ✔ Modern hero section with video background
+### ✔ Smooth animations & hover effects
+### ✔ Clean typography & brand-based color palette
+### ✔ Modular and reusable components
+### ✔ Tailwind CSS utility-first styling
+### ✔ Separate sections for About, Products, Highlights, Contact
+
+
+## 📂 Project Sections
+
+### 1. 🧭 About Section
+Shows: 
+  - #### Company introduction
+  - #### Mission statement
+  - #### Key values: Precision, Innovation, Security
+  - #### Elegant video-background hero layout
+
+### 2. 🚁 Products Section
+Highlights UAV products with details like:
+  - #### Specifications
+  - #### Capabilities
+  - #### Use cases
+  - #### Technology stack
+
+## 3. 🌟 Highlights Section
+Displays core strengths of VyomGarud:
+  - #### Autonomous flight systems
+  - #### AI-powered navigation
+  - #### Military-grade encryption
+  - #### Fail-safe redundancy
+
+## 4. 📞 Contact Section
+includes:
+  - #### Contact Form
+  - #### Email / phone details
+  - #### HQ location (optional)
+  - #### Social links
+
+
+# 🛠 Tech Stack
+
+- ## React- It is used for Component based UI
+- ## Tailwind CSS - It is used for Styling & responsiveness
+- ## Lucide- It is used for react	Icons
+- ## Vite - It is used for Fast dev server & build tool
+
+
+# 📁 Folder Structure
+
+VyomGarud/
+
+  │
+  
+  ├── public/
+  
+  │   ├── videos/
+  
+  │   │   └── vyom-bg.mp4
+  
+  │   └── assets/
+
+  │
+
+  ├── src/
+
+  │   ├── components/
+  
+  │   │   ├── Navbar.jsx
+ 
+  │   │   ├── About.jsx
+  
+  │   │   ├── Products.jsx
+  
+  │   │   ├── Highlights.jsx
+
+  │   │   ├── Contact.jsx
+
+  │   │   └── Mockdata.js
+  
+  │   │
+  
+  │   ├── App.jsx
+  
+  │   ├── main.jsx
+  
+  │   └── index.css
+  
+  │
+
+  └── package.json
+
+
+
+       
+
+
+
+
+
+
+
