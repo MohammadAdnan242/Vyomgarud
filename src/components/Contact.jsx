@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { addContactSubmission } from '../components/Mockdata';
-import { useToast } from '../hooks/use-toast';
+
 
 const Contact = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,26 +19,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Mock submission - will be connected to backend later
-    addContactSubmission(formData);
-    
-    toast({
-      title: "Message Sent Successfully",
-      description: "We'll get back to you within 24 hours.",
-    });
-
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      organization: '',
-      message: ''
-    });
-  };
+ 
 
   return (
     <section id="contact" className="py-25 px-[7.6923%] bg-black">
@@ -82,7 +62,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form onSubmit={handleSubmit} className="bg-white/0.03 border border-white/10 rounded-none p-10">
+          <form  className="bg-white/0.03 border border-white/10 rounded-none p-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="flex flex-col gap-2">
                 <label htmlFor="name" className="text-sm font-medium text-white/85 uppercase tracking-wide">Full Name *</label>
@@ -91,7 +71,7 @@ const Contact = () => {
                   id="name"
                   name="name"
                   value={formData.name}
-                  onChange={handleChange}
+                  
                   required
                   className="bg-white/5 border border-white/20 rounded-none px-4 py-3.5 text-base text-white transition-all duration-300 focus:outline-none focus:border-[#ff7b00] focus:bg-white/8 placeholder:text-white/40"
                   placeholder="John Doe"
@@ -103,8 +83,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                 
                   required
                   className="bg-white/5 border border-white/20 rounded-none px-4 py-3.5 text-base text-white transition-all duration-300 focus:outline-none focus:border-[#ff7b00] focus:bg-white/8 placeholder:text-white/40"
                   placeholder="john@example.com"
@@ -118,8 +97,6 @@ const Contact = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                   className="bg-white/5 border border-white/20 rounded-none px-4 py-3.5 text-base text-white transition-all duration-300 focus:outline-none focus:border-[#ff7b00] focus:bg-white/8 placeholder:text-white/40"
                   placeholder="+91 XXXXX XXXXX"
                 />
@@ -130,8 +107,7 @@ const Contact = () => {
                   type="text"
                   id="organization"
                   name="organization"
-                  value={formData.organization}
-                  onChange={handleChange}
+                  
                   className="bg-white/5 border border-white/20 rounded-none px-4 py-3.5 text-base text-white transition-all duration-300 focus:outline-none focus:border-[#ff7b00] focus:bg-white/8 placeholder:text-white/40"
                   placeholder="Your Organization"
                 />
@@ -142,8 +118,6 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
                 required
                 rows="5"
                 className="bg-white/5 border border-white/20 rounded-none px-4 py-3.5 text-base text-white transition-all duration-300 focus:outline-none focus:border-[#ff7b00] focus:bg-white/8 placeholder:text-white/40 resize-vertical min-h-[120px]"
@@ -152,7 +126,7 @@ const Contact = () => {
             </div>
             <button 
               type="submit" 
-              className="mt-4 w-full bg-[#ff7b00] text-black border-none rounded-none px-8 py-4 text-base font-semibold cursor-pointer transition-all duration-300 inline-flex items-center justify-center gap-3 hover:bg-[#ff7b00]/90 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(255,123,0,0.3)] active:translate-y-0"
+              className="mt-4 w-full bg-[#ff7b00] text-white border-none rounded-none px-8 py-4 text-base font-semibold cursor-pointer transition-all duration-300 inline-flex items-center justify-center gap-3 hover:bg-[#ff7b00]/90 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(255,123,0,0.3)] active:translate-y-0"
             >
               Send Message
               <Send size={20} />
