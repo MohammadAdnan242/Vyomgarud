@@ -138,6 +138,44 @@ VyomGarud/
   └── package.json
 
 
+# 🚀 Setup & Installation
+
+## 1️⃣ Clone the repository:
+             git clone https://github.com/yourusername/VyomGarud.git
+            cd VyomGarud
+
+## 2️⃣ Install dependencies
+            npm install
+
+## 3️⃣ Start development server
+           npm run build
+
+
+# 🧪 Available Scripts
+
+- ## npm run dev - Start local dev server
+- ## npm run build- Create production build
+- ## npm run preview- Preview build locally
+
+# 🤝 Contributing
+Contributions are welcome!
+
+## 1.Fork the repo
+
+## 2.Create a new branch
+
+## 3.Commit your changes
+
+## 4.Open a pull request
+
+
+# 📄 License
+
+This project is licensed under the MIT License.
+You are free to modify and use it with proper attribution.
+
+
+
 
        
 
